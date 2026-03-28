@@ -1,12 +1,12 @@
 # Finxa Commerce Marketing Site 🚀
 
-A modern, responsive marketing website built using **Next.js**, **TypeScript**, and **Tailwind CSS**. This project was developed as part of an internship to demonstrate modern frontend development practices and deployment workflows.
+A modern, responsive marketing website built using **Next.js**, **TypeScript** and **Tailwind CSS**. This project was developed as part of an internship to demonstrate modern frontend development practices and deployment workflows.
 
 ---
 
 ## 🌐 Overview
 
-Finxa Commerce is a multi-page marketing website designed to present services, pricing, and company information in a clean and user-friendly interface. The application follows a component-based architecture and focuses on performance, responsiveness, and maintainability.
+Finxa Commerce is a multi-page marketing website designed to present services, pricing and company information in a clean and user-friendly interface. The application follows a component-based architecture and focuses on performance, responsiveness and maintainability.
 
 ---
 
@@ -64,7 +64,7 @@ The project is deployed using Vercel with continuous deployment connected to a G
 
 ---
 
-## 👨‍💻 Author
+## 👩‍💻 Author
 
 Student Project  
 Developed as part of an internship to demonstrate web development and deployment skills.
