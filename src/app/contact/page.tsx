@@ -68,12 +68,6 @@ export default function Contact() {
           >
             Send Message
           </button>
-
-          {formAction === "#" && (
-            <p className="text-sm text-zinc-600">
-              Add NEXT_PUBLIC_FORMSPREE_URL in your environment file to enable submissions.
-            </p>
-          )}
         </form>
       </section>
     </div>
