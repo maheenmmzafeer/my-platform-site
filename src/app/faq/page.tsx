@@ -9,23 +9,27 @@ export default function FAQ() {
   const questions = [
     {
       q: "What is Finxa Commerce?",
-      a: "Finxa Commerce is a SaaS platform for commerce operations teams to manage workflows, team execution and customer-facing processes in one workspace.",
+      a: "Finxa Commerce is software that helps your team run daily operations in one place. It replaces scattered spreadsheets and chat threads with clear workflows.",
     },
     {
-      q: "Who is Finxa Commerce built for?",
-      a: "It is designed for growing businesses that run recurring operational workflows and need better visibility, accountability and speed.",
+      q: "What problems does it solve for a normal company?",
+      a: "It helps when work is getting missed, ownership is unclear, or updates are spread across too many tools. Your team can track tasks, status and responsibilities clearly.",
+    },
+    {
+      q: "Do we need a technical team to use it?",
+      a: "No. Most teams start with basic setup and onboarding guidance. You can begin with simple workflows and expand over time.",
+    },
+    {
+      q: "How long does setup usually take?",
+      a: "Most teams get initial setup done in about 7 to 10 days, depending on how many workflows they want to configure.",
+    },
+    {
+      q: "Which plan should we choose first?",
+      a: "If you are a small team, start with Starter. If you need more automation and priority handling, choose Growth. Scale is best for larger multi-team operations.",
     },
     {
       q: "Can we start small and upgrade later?",
-      a: "Yes. You can begin with a smaller plan and move to a higher tier as your team and process complexity increase.",
-    },
-    {
-      q: "How long does onboarding usually take?",
-      a: "Most teams complete initial onboarding within 7 to 10 days, depending on workflow complexity and internal readiness.",
-    },
-    {
-      q: "Is onboarding included?",
-      a: "Yes. Every plan includes onboarding guidance, and higher plans include deeper implementation support and rollout planning.",
+      a: "Yes. You can move to a higher plan as your team size and workflow complexity grow.",
     },
     {
       q: "How does support work?",
@@ -33,15 +37,15 @@ export default function FAQ() {
     },
     {
       q: "Do you offer annual billing?",
-      a: "Yes. Finxa Commerce offers annual billing options for teams that prefer longer planning cycles.",
+      a: "Yes. Annual billing is available for teams that prefer a longer-term billing cycle.",
     },
     {
       q: "Is our business data secure?",
-      a: "Finxa Commerce follows standard security practices and continuously improves infrastructure protections for customer data.",
+      a: "Finxa Commerce follows standard security practices and continuously improves protections for customer data.",
     },
     {
-      q: "Can we request a product walkthrough before choosing a plan?",
-      a: "Absolutely. You can contact the team to schedule a walkthrough and discuss your operational requirements before committing.",
+      q: "Can we request a walkthrough before buying?",
+      a: "Yes. You can contact the team to schedule a walkthrough based on your current process and goals.",
     },
   ];
 
@@ -50,7 +54,7 @@ export default function FAQ() {
       <section className="rounded-2xl border border-sky-200 bg-sky-50/60 p-7 sm:p-10">
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Frequently Asked Questions</h1>
         <p className="mt-4 max-w-2xl text-zinc-600">
-          Everything teams usually ask before adopting Finxa Commerce.
+          Plain-language answers to help you quickly understand what Finxa Commerce offers.
         </p>
       </section>
 

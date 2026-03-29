@@ -16,6 +16,10 @@ export default function About() {
           We focus on clarity, speed and dependable execution across daily commerce workflows,
           from intake and fulfillment coordination to support handoffs.
         </p>
+        <p className="mt-3 max-w-3xl text-sm text-zinc-500">
+          Put simply: Finxa Commerce helps businesses run operations with fewer manual follow-ups
+          and clearer team accountability.
+        </p>
       </section>
 
       <section className="grid gap-4 md:grid-cols-3">

@@ -13,6 +13,7 @@ export default function Pricing() {
       name: "Starter",
       price: "$19",
       subtitle: "For early-stage teams",
+      fit: "Best for teams currently managing operations in spreadsheets.",
       points: [
         "Core operations dashboard",
         "Basic workflow automation",
@@ -25,6 +26,7 @@ export default function Pricing() {
       name: "Growth",
       price: "$49",
       subtitle: "For scaling operations",
+      fit: "Best for teams that need stronger process control and faster response times.",
       points: [
         "Advanced automation rules",
         "SLA and queue routing",
@@ -38,6 +40,7 @@ export default function Pricing() {
       name: "Scale",
       price: "$129",
       subtitle: "For multi-team operations",
+      fit: "Best for larger companies running multiple teams and complex workflows.",
       points: [
         "Custom onboarding plan",
         "Dedicated success manager",
@@ -53,11 +56,11 @@ export default function Pricing() {
       <section className="rounded-2xl border border-zinc-200 bg-white p-7 sm:p-10">
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Pricing built for momentum</h1>
         <p className="mt-4 max-w-2xl text-zinc-600">
-          Choose a plan based on your team size and operational complexity. All
-          plans include core platform capabilities and secure infrastructure.
+          Choose a plan based on your team size and workflow complexity.
+          Every plan helps you organize daily operations in one place.
         </p>
         <p className="mt-3 text-sm text-zinc-500">
-          Pricing shown is monthly per workspace. Annual plans are available with discounted rates.
+          Pricing is per workspace, billed monthly. Annual billing is available with discounted rates.
         </p>
       </section>
 
@@ -74,6 +77,7 @@ export default function Pricing() {
           >
             <h2 className="text-xl font-semibold tracking-tight">{plan.name}</h2>
             <p className="mt-1 text-sm text-zinc-600">{plan.subtitle}</p>
+            <p className="mt-2 text-sm text-zinc-500">{plan.fit}</p>
             <p className="mt-5 text-4xl font-semibold tracking-tight">{plan.price}</p>
             <p className="text-sm text-zinc-500">per month</p>
 

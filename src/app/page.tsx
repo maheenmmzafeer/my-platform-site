@@ -26,17 +26,17 @@ export default function Home() {
   const features = [
     {
       title: "Unified Dashboard",
-      text: "Track orders, exceptions, fulfillment states and team workload from one live operations view.",
+      text: "See all active orders, pending issues and team tasks in one place instead of separate spreadsheets.",
       tone: "border-sky-200 bg-sky-50/70",
     },
     {
       title: "Automated Workflows",
-      text: "Automate repetitive tasks like order tagging, SLA routing and status updates with rule-based triggers.",
+      text: "Automatically assign tasks, route urgent cases and trigger updates so nothing gets missed.",
       tone: "border-cyan-200 bg-cyan-50/70",
     },
     {
       title: "Reliable Foundations",
-      text: "Run with clear permissions, audit trails and dependable performance as your operation scales.",
+      text: "Grow with clear permissions, activity history and structured processes as your team gets bigger.",
       tone: "border-blue-200 bg-blue-50/70",
     },
   ];
@@ -51,8 +51,14 @@ export default function Home() {
           Run modern commerce operations without the spreadsheet chaos.
         </h1>
         <p className="mt-5 max-w-2xl text-zinc-600 text-base sm:text-lg">
-          Finxa Commerce centralizes day-to-day execution for operations teams,
-          so orders move faster, teams stay aligned and customers get consistent service.
+          Finxa Commerce helps companies run day-to-day operations from one system.
+          Instead of managing work in scattered sheets and chats, teams can track orders,
+          assign tasks and keep customers updated from a shared workflow.
+        </p>
+
+        <p className="mt-4 max-w-2xl text-sm text-zinc-500">
+          In simple terms: it is an operations management SaaS for teams handling order flow,
+          issue resolution and customer communication.
         </p>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-3">

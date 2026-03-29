@@ -15,6 +15,9 @@ export default function Contact() {
         <p className="mt-4 max-w-2xl text-zinc-600">
           Tell us about your team, goals, or questions. We usually respond within one business day.
         </p>
+        <p className="mt-3 max-w-2xl text-sm text-zinc-500">
+          Not sure where to start? Share your current process and we will suggest the best plan and workflow setup.
+        </p>
       </section>
 
       <section className="rounded-2xl border border-zinc-200 bg-white p-7 sm:p-10">
