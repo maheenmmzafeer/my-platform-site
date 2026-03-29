@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/finxa.wll.png",
-        width: 2000,
-        height: 579,
+        width: 1600,
+        height: 630,
       },
     ],
   },
