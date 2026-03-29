@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Finxa Commerce",
     images: [
       {
-        url: "/Finxa.wll.png",
+        url: "https://my-platform-site.vercel.app/Finxa.png",
         width: 1200,
         height: 630,
       },
