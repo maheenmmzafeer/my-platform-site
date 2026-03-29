@@ -68,6 +68,11 @@ export default function Contact() {
           >
             Send Message
           </button>
+
+          {formAction === "#" && (
+            <p className="text-sm text-zinc-600">
+Unavailable            </p>
+          )}
         </form>
       </section>
     </div>
