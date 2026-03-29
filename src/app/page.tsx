@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     siteName: "Finxa Commerce",
     images: [
       {
-        url: "/finxa.wll.png",
-        width: 1600,
+        url: "/Finxa.wll.png",
+        width: 1200,
         height: 630,
       },
     ],
