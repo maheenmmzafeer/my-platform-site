@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pricing - Finxa Commerce",
   description:
-    "Explore Finxa Commerce pricing plans and compare capabilities for teams of different sizes.",
+    "Explore Finxa Commerce pricing plans, feature limits and support options for operations teams of different sizes.",
 };
 
 export default function Pricing() {
@@ -12,16 +12,22 @@ export default function Pricing() {
     {
       name: "Starter",
       price: "$19",
-      subtitle: "For new teams",
-      points: ["Core workflow dashboard", "Email support", "Up to 3 users"],
+      subtitle: "For early-stage teams",
+      points: [
+        "Core operations dashboard",
+        "Basic workflow automation",
+        "Email support",
+        "Up to 3 users",
+      ],
       tone: "border-sky-200 bg-sky-50/70",
     },
     {
       name: "Growth",
       price: "$49",
-      subtitle: "For scaling brands",
+      subtitle: "For scaling operations",
       points: [
-        "Advanced automations",
+        "Advanced automation rules",
+        "SLA and queue routing",
         "Priority support",
         "Up to 15 users",
       ],
@@ -31,8 +37,13 @@ export default function Pricing() {
     {
       name: "Scale",
       price: "$129",
-      subtitle: "For larger operations",
-      points: ["Custom onboarding", "Dedicated success partner", "Unlimited users"],
+      subtitle: "For multi-team operations",
+      points: [
+        "Custom onboarding plan",
+        "Dedicated success manager",
+        "Advanced team permissions",
+        "Unlimited users",
+      ],
       tone: "border-blue-200 bg-blue-50/70",
     },
   ];
@@ -44,6 +55,9 @@ export default function Pricing() {
         <p className="mt-4 max-w-2xl text-zinc-600">
           Choose a plan based on your team size and operational complexity. All
           plans include core platform capabilities and secure infrastructure.
+        </p>
+        <p className="mt-3 text-sm text-zinc-500">
+          Pricing shown is monthly per workspace. Annual plans are available with discounted rates.
         </p>
       </section>
 
@@ -98,16 +112,28 @@ export default function Pricing() {
               <td className="py-3 pl-4 border-b border-zinc-100">Advanced</td>
             </tr>
             <tr>
+              <td className="py-3 pr-4 border-b border-zinc-100">SLA routing</td>
+              <td className="py-3 px-4 border-b border-zinc-100">-</td>
+              <td className="py-3 px-4 border-b border-zinc-100">Included</td>
+              <td className="py-3 pl-4 border-b border-zinc-100">Included</td>
+            </tr>
+            <tr>
               <td className="py-3 pr-4 border-b border-zinc-100">Team seats</td>
               <td className="py-3 px-4 border-b border-zinc-100">Up to 3</td>
               <td className="py-3 px-4 border-b border-zinc-100">Up to 15</td>
               <td className="py-3 pl-4 border-b border-zinc-100">Unlimited</td>
             </tr>
             <tr>
-              <td className="py-3 pr-4">Support level</td>
-              <td className="py-3 px-4">Standard</td>
-              <td className="py-3 px-4">Priority</td>
-              <td className="py-3 pl-4">Dedicated</td>
+              <td className="py-3 pr-4 border-b border-zinc-100">Support level</td>
+              <td className="py-3 px-4 border-b border-zinc-100">Standard</td>
+              <td className="py-3 px-4 border-b border-zinc-100">Priority</td>
+              <td className="py-3 pl-4 border-b border-zinc-100">Dedicated</td>
+            </tr>
+            <tr>
+              <td className="py-3 pr-4">Implementation support</td>
+              <td className="py-3 px-4">Self-guided</td>
+              <td className="py-3 px-4">Guided onboarding</td>
+              <td className="py-3 pl-4">Custom rollout plan</td>
             </tr>
           </tbody>
         </table>

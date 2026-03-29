@@ -26,7 +26,7 @@ export default function Terms() {
           <h2 className="text-lg font-semibold">2. Acceptable Use</h2>
           <p className="mt-3 text-sm leading-6 text-zinc-700">
             You agree not to misuse the platform, attempt unauthorized access, interfere with
-            service reliability, or use the platform for unlawful activity.
+            service reliability or use the platform for unlawful activity.
           </p>
         </article>
 
@@ -43,6 +43,22 @@ export default function Terms() {
           <p className="mt-3 text-sm leading-6 text-zinc-700">
             We may revise these terms as the product evolves. Continued use of the platform
             after updates indicates acceptance of the revised terms.
+          </p>
+        </article>
+
+        <article className="rounded-xl border border-zinc-200 bg-white p-6">
+          <h2 className="text-lg font-semibold">5. Billing and Plan Changes</h2>
+          <p className="mt-3 text-sm leading-6 text-zinc-700">
+            Paid plans are billed according to your selected cycle. You can upgrade or change plans
+            as your requirements evolve. Fees are non-refundable unless otherwise required by law.
+          </p>
+        </article>
+
+        <article className="rounded-xl border border-zinc-200 bg-white p-6">
+          <h2 className="text-lg font-semibold">6. Service Availability</h2>
+          <p className="mt-3 text-sm leading-6 text-zinc-700">
+            We work to maintain reliable service availability and performance. Planned maintenance,
+            infrastructure events or factors beyond reasonable control may impact availability.
           </p>
         </article>
       </section>

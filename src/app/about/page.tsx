@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About - Finxa Commerce",
   description:
-    "Learn about Finxa Commerce and the mission to simplify how modern commerce teams operate.",
+    "Learn about Finxa Commerce and the mission to help commerce operations teams execute reliably at scale.",
 };
 
 export default function About() {
@@ -13,7 +13,8 @@ export default function About() {
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">About Finxa Commerce</h1>
         <p className="mt-4 max-w-3xl text-zinc-600">
           Finxa Commerce exists to reduce operational friction for modern businesses.
-          We focus on clarity, speed, and dependable execution across daily commerce workflows.
+          We focus on clarity, speed and dependable execution across daily commerce workflows,
+          from intake and fulfillment coordination to support handoffs.
         </p>
       </section>
 
@@ -27,7 +28,7 @@ export default function About() {
         <article className="rounded-xl border border-cyan-200 bg-cyan-50/70 p-6">
           <p className="text-xs uppercase tracking-wide text-zinc-500">Approach</p>
           <p className="mt-3 text-sm leading-6 text-zinc-700">
-            Keep interfaces minimal, workflows practical, and decision-making data-informed.
+            Keep interfaces minimal, workflows practical and decision-making data-informed.
           </p>
         </article>
         <article className="rounded-xl border border-blue-200 bg-blue-50/70 p-6">
@@ -44,6 +45,11 @@ export default function About() {
           From early-stage teams to established operations, Finxa Commerce supports
           disciplined execution with a clear and adaptable product foundation.
         </p>
+        <ul className="mt-5 grid gap-3 text-sm text-zinc-200 sm:grid-cols-3">
+          <li className="rounded-lg border border-white/20 bg-white/5 p-3">Operational clarity across teams</li>
+          <li className="rounded-lg border border-white/20 bg-white/5 p-3">Consistent customer response quality</li>
+          <li className="rounded-lg border border-white/20 bg-white/5 p-3">Scalable workflows without extra overhead</li>
+        </ul>
       </section>
     </div>
   );

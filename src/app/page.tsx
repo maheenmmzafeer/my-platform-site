@@ -4,11 +4,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Finxa Commerce - Home",
   description:
-    "Finxa Commerce helps growing businesses centralize operations, team workflows, and customer communication.",
+    "Finxa Commerce helps operations teams run orders, inventory and customer workflows from one clear operating layer.",
   openGraph: {
     title: "Finxa Commerce - Home",
     description:
-      "Finxa Commerce helps growing businesses centralize operations, team workflows, and customer communication.",
+      "Finxa Commerce helps operations teams run orders, inventory and customer workflows from one clear operating layer.",
     type: "website",
     url: "https://finxa.store",
   },
@@ -18,17 +18,17 @@ export default function Home() {
   const features = [
     {
       title: "Unified Dashboard",
-      text: "Track activity, priorities, and team output from one clear control panel.",
+      text: "Track orders, exceptions, fulfillment states and team workload from one live operations view.",
       tone: "border-sky-200 bg-sky-50/70",
     },
     {
       title: "Automated Workflows",
-      text: "Reduce manual tasks with repeatable flows for operations and customer handling.",
+      text: "Automate repetitive tasks like order tagging, SLA routing and status updates with rule-based triggers.",
       tone: "border-cyan-200 bg-cyan-50/70",
     },
     {
       title: "Reliable Foundations",
-      text: "Built for teams that need consistent performance, clarity, and scalable structure.",
+      text: "Run with clear permissions, audit trails and dependable performance as your operation scales.",
       tone: "border-blue-200 bg-blue-50/70",
     },
   ];
@@ -40,12 +40,27 @@ export default function Home() {
           Finxa Commerce Platform
         </p>
         <h1 className="mt-5 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight max-w-4xl">
-          A clean operating layer for modern commerce teams.
+          Run modern commerce operations without the spreadsheet chaos.
         </h1>
         <p className="mt-5 max-w-2xl text-zinc-600 text-base sm:text-lg">
-          Simplify day-to-day operations, align your team, and move faster with
-          workflows that stay clear as your business grows.
+          Finxa Commerce centralizes day-to-day execution for operations teams,
+          so orders move faster, teams stay aligned and customers get consistent service.
         </p>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-3">
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-3">
+            <p className="text-xs uppercase tracking-wide text-zinc-500">Average onboarding</p>
+            <p className="mt-1 text-lg font-semibold tracking-tight">7-10 days</p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-3">
+            <p className="text-xs uppercase tracking-wide text-zinc-500">Team adoption</p>
+            <p className="mt-1 text-lg font-semibold tracking-tight">2 weeks typical</p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-3">
+            <p className="text-xs uppercase tracking-wide text-zinc-500">Support response</p>
+            <p className="mt-1 text-lg font-semibold tracking-tight">Within 1 business day</p>
+          </div>
+        </div>
 
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
@@ -82,7 +97,7 @@ export default function Home() {
             <p className="text-xs uppercase tracking-wide text-zinc-500">Step 1</p>
             <p className="mt-2 font-medium">Centralize your workflow</p>
             <p className="mt-2 text-sm text-zinc-600">
-              Bring key operations into one consistent system.
+              Connect your core processes into one workspace with shared context.
             </p>
           </div>
 
@@ -90,7 +105,7 @@ export default function Home() {
             <p className="text-xs uppercase tracking-wide text-zinc-500">Step 2</p>
             <p className="mt-2 font-medium">Create repeatable processes</p>
             <p className="mt-2 text-sm text-zinc-600">
-              Standardize tasks so your team can execute quickly.
+              Turn tribal knowledge into clear playbooks your team can execute every day.
             </p>
           </div>
 
@@ -98,7 +113,7 @@ export default function Home() {
             <p className="text-xs uppercase tracking-wide text-zinc-500">Step 3</p>
             <p className="mt-2 font-medium">Scale with confidence</p>
             <p className="mt-2 text-sm text-zinc-600">
-              Keep the same clarity even as volume and complexity increase.
+              Maintain quality and visibility even as order volume and headcount increase.
             </p>
           </div>
         </div>
@@ -109,8 +124,8 @@ export default function Home() {
           Ready to modernize your commerce operations?
         </h2>
         <p className="mt-3 text-zinc-300 max-w-2xl">
-          Explore plans, compare options, and choose the right setup for your
-          team.
+          Compare plans, review implementation support and choose the setup that
+          fits your current stage.
         </p>
         <Link
           href="/pricing"

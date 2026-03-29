@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact - Finxa Commerce",
-  description: "Contact Finxa Commerce for support, onboarding, or product inquiries.",
+  description: "Contact Finxa Commerce for product walkthroughs, onboarding guidance and support inquiries.",
 };
 
 export default function Contact() {
@@ -19,6 +19,8 @@ export default function Contact() {
 
       <section className="rounded-2xl border border-zinc-200 bg-white p-7 sm:p-10">
         <form action={formAction} method="POST" className="space-y-5 max-w-2xl">
+          <input type="hidden" name="_subject" value="New Finxa Commerce contact request" />
+
           <div className="space-y-2">
             <label htmlFor="name" className="text-sm font-medium text-zinc-800">
               Name
@@ -28,6 +30,8 @@ export default function Contact() {
               name="name"
               type="text"
               required
+              minLength={2}
+              maxLength={80}
               className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-black"
               placeholder="Your full name"
             />
@@ -42,6 +46,7 @@ export default function Contact() {
               name="email"
               type="email"
               required
+              maxLength={120}
               className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-black"
               placeholder="you@company.com"
             />
@@ -56,10 +61,12 @@ export default function Contact() {
               name="message"
               required
               minLength={10}
+              maxLength={2500}
               rows={6}
               className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-black"
               placeholder="Tell us what you need help with"
             />
+            <p className="text-xs text-zinc-500">Minimum 10 characters. Please include your team size and key goals.</p>
           </div>
 
           <button
@@ -71,7 +78,7 @@ export default function Contact() {
 
           {formAction === "#" && (
             <p className="text-sm text-zinc-600">
-              Unavailable
+              Form endpoint not configured yet. Add NEXT_PUBLIC_FORMSPREE_URL in your environment settings.
             </p>
           )}
         </form>

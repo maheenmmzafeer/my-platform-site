@@ -18,7 +18,7 @@ export default function Privacy() {
         <article className="rounded-xl border border-zinc-200 bg-white p-6">
           <h2 className="text-lg font-semibold">1. Information We Collect</h2>
           <p className="mt-3 text-sm leading-6 text-zinc-700">
-            We may collect business contact details, account details, support communication,
+            We may collect business contact details, account details, support communication
             and product usage signals needed to operate and improve Finxa Commerce.
           </p>
         </article>
@@ -26,7 +26,7 @@ export default function Privacy() {
         <article className="rounded-xl border border-zinc-200 bg-white p-6">
           <h2 className="text-lg font-semibold">2. How Information Is Used</h2>
           <p className="mt-3 text-sm leading-6 text-zinc-700">
-            Information is used to provide services, maintain account security, support customers,
+            Information is used to provide services, maintain account security, support customers
             and improve product reliability and experience quality.
           </p>
         </article>
@@ -44,6 +44,22 @@ export default function Privacy() {
           <p className="mt-3 text-sm leading-6 text-zinc-700">
             We apply standard technical and organizational safeguards to protect stored information.
             No system can guarantee absolute security, but we continuously improve our controls.
+          </p>
+        </article>
+
+        <article className="rounded-xl border border-zinc-200 bg-white p-6">
+          <h2 className="text-lg font-semibold">5. Data Retention</h2>
+          <p className="mt-3 text-sm leading-6 text-zinc-700">
+            We retain data for as long as needed to provide services, meet legal obligations,
+            resolve disputes and enforce agreements. Retention periods may vary by data type.
+          </p>
+        </article>
+
+        <article className="rounded-xl border border-zinc-200 bg-white p-6">
+          <h2 className="text-lg font-semibold">6. Contact</h2>
+          <p className="mt-3 text-sm leading-6 text-zinc-700">
+            Questions about this policy can be submitted through the Contact page.
+            This draft policy is informational and may be updated as the product evolves.
           </p>
         </article>
       </section>
