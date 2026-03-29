@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import finxaLogo from "../finxa.wll.png";
 
 const navLinks = [
 	{ href: "/", label: "Home" },
@@ -17,12 +19,16 @@ export function SiteHeader() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<header className="sticky top-0 z-40 border-b border-zinc-800/80 bg-zinc-950/95 text-white backdrop-blur supports-[backdrop-filter]:bg-zinc-950/80">
-			<div className="mx-auto w-full max-w-6xl px-4 py-4">
-				<div className="flex items-center justify-between gap-3">
-					<Link href="/" className="inline-flex items-center gap-2 text-lg font-semibold tracking-tight">
-						<span className="inline-block h-2 w-2 rounded-full bg-sky-400" />
-						<span>Finxa Commerce</span>
+		<header className="sticky top-0 z-40 border-b border-zinc-800 bg-black text-white">
+			<div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+				<div className="flex items-center justify-between gap-3 sm:justify-start">
+					<Link href="/" className="inline-flex items-center" aria-label="Finxa home">
+						<Image
+							src={finxaLogo}
+							alt="Finxa"
+							priority
+							className="h-8 w-auto sm:h-9"
+						/>
 					</Link>
 
 					<button
@@ -37,7 +43,7 @@ export function SiteHeader() {
 					</button>
 				</div>
 
-				<nav className="mt-3 hidden items-center gap-1 text-sm text-zinc-300 sm:flex">
+				<nav className="hidden flex-wrap items-center gap-2 text-sm text-zinc-200 sm:flex">
 					{navLinks.map((item) => {
 						const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
 
@@ -45,10 +51,8 @@ export function SiteHeader() {
 							<Link
 								key={item.href}
 								href={item.href}
-								className={`rounded-full px-3 py-1.5 transition-colors ${
-									isActive
-										? "bg-white/15 text-white"
-										: "text-zinc-300 hover:bg-white/10 hover:text-white"
+								className={`px-1 py-1 transition-colors ${
+									isActive ? "text-white" : "text-white/90 hover:text-white"
 								}`}
 								aria-current={isActive ? "page" : undefined}
 							>
