@@ -20,21 +20,21 @@ export function SiteHeader() {
 
 	return (
 		<header className="sticky top-0 z-40 border-b border-zinc-800 bg-black text-white">
-			<div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:py-4">
-				<div className="flex items-center justify-between gap-3 sm:justify-start">
+			<div className="mx-auto flex w-full max-w-6xl flex-col gap-0 px-4 py-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:py-4">
+				<div className="flex items-center justify-between gap-3 py-0.5 sm:justify-start">
 					<Link href="/" className="inline-flex items-center" aria-label="Finxa home">
 						<Image
 							src={finxaLogo}
 							alt="Finxa"
 							priority
-							className="h-6 w-auto sm:h-9"
+							className="h-8 w-auto sm:h-9"
 						/>
 					</Link>
 
 					<button
 						type="button"
 						onClick={() => setIsMenuOpen((open) => !open)}
-						className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-white/20 text-zinc-200 transition-colors hover:bg-white/10 sm:hidden"
+						className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 text-zinc-200 transition-colors hover:bg-white/10 sm:hidden"
 						aria-expanded={isMenuOpen}
 						aria-controls="site-mobile-menu"
 						aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -64,8 +64,8 @@ export function SiteHeader() {
 
 				<nav
 					id="site-mobile-menu"
-					className={`mt-2 grid overflow-hidden transition-all duration-200 sm:hidden ${
-						isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+					className={`grid overflow-hidden transition-all duration-200 sm:hidden ${
+						isMenuOpen ? "mt-2 max-h-96 opacity-100" : "mt-0 max-h-0 opacity-0"
 					}`}
 				>
 					<div className="rounded-xl border border-white/10 bg-white/5 p-2">
