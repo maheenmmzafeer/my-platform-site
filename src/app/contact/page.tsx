@@ -71,7 +71,8 @@ export default function Contact() {
 
           {formAction === "#" && (
             <p className="text-sm text-zinc-600">
-Unavailable            </p>
+              Unavailable
+            </p>
           )}
         </form>
       </section>
