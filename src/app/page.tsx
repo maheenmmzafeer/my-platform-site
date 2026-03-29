@@ -10,7 +10,15 @@ export const metadata: Metadata = {
     description:
       "Finxa Commerce helps operations teams run orders, inventory and customer workflows from one clear operating layer.",
     type: "website",
-    url: "https://finxa.store",
+    url: "https://my-platform-site.vercel.app/",
+    siteName: "Finxa Commerce",
+    images: [
+      {
+        url: "/finxa.wll.png",
+        width: 2000,
+        height: 579,
+      },
+    ],
   },
 };
 
