@@ -50,22 +50,66 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="space-y-10">
-      <section className="rounded-2xl border border-sky-200 bg-sky-50/60 p-7 sm:p-10">
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Frequently Asked Questions</h1>
-        <p className="mt-4 max-w-2xl text-zinc-600">
-          Plain-language answers to help you quickly understand what Finxa Commerce offers.
+    <div className="space-y-20">
+      
+      {/* Split Hero */}
+      <section className="grid gap-10 lg:grid-cols-2 items-center">
+        <div>
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            FAQ
+          </p>
+          <h1 className="mt-4 text-5xl font-semibold tracking-tight leading-tight text-slate-900">
+            Frequently Asked Questions
+          </h1>
+          <p className="mt-6 text-slate-700 max-w-lg">
+            Plain-language answers to help you quickly understand what Finxa Commerce offers.
+          </p>
+        </div>
+
+        <div className="rounded-3xl bg-gradient-to-br from-sky-100 to-blue-50 p-8 border border-sky-200">
+          <p className="text-sm text-slate-600">Support & Guidance</p>
+          <p className="mt-3 text-xl font-medium text-slate-900 leading-relaxed">
+            We’re here to help you get the most from Finxa Commerce.
+          </p>
+        </div>
+      </section>
+
+      {/* Big Statement */}
+      <section className="text-center max-w-4xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+          Answers for every stage of your journey
+        </h2>
+        <p className="mt-4 text-slate-700">
+          From onboarding to scaling, these FAQs cover the most common questions teams have about using Finxa Commerce.
         </p>
       </section>
 
-      <section className="grid gap-4">
-        {questions.map((item) => (
-          <article key={item.q} className="rounded-xl border border-zinc-200 bg-white p-6">
-            <h2 className="text-lg font-semibold tracking-tight">{item.q}</h2>
-            <p className="mt-3 text-sm leading-6 text-zinc-600">{item.a}</p>
-          </article>
+      {/* FAQ List */}
+      <section className="space-y-10 max-w-3xl mx-auto">
+        {questions.map((item, idx) => (
+          <div key={item.q} className="flex gap-6 items-start">
+            <div
+              className={`w-2 rounded-full ${
+                idx % 3 === 0
+                  ? "bg-sky-400"
+                  : idx % 3 === 1
+                  ? "bg-cyan-400"
+                  : "bg-blue-400"
+              }`}
+            ></div>
+            <div>
+              <p className="text-xs uppercase tracking-wide text-slate-500">
+                Q{idx + 1}
+              </p>
+              <h2 className="mt-2 text-lg font-semibold tracking-tight text-slate-900">
+                {item.q}
+              </h2>
+              <p className="mt-2 text-slate-700">{item.a}</p>
+            </div>
+          </div>
         ))}
       </section>
+
     </div>
   );
 }

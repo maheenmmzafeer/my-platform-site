@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f8f8;
+  --background: #f4f7fb;
   --surface: #ffffff;
-  --foreground: #111111;
-  --muted: #5c5c5c;
-  --border: #dcdcdc;
+  --foreground: #0f172a;
+  --muted: #52607a;
+  --border: #d8e0ec;
+  --brand: #0ea5e9;
+  --brand-strong: #0369a1;
 }
 
 @theme inline {
@@ -14,22 +16,71 @@
   --color-surface: var(--surface);
   --color-muted: var(--muted);
   --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
+  --font-brand: var(--brand);
+  --font-sans: var(--font-manrope);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background:
-    radial-gradient(circle at 20% -20%, #dbeafe 0%, transparent 40%),
-    radial-gradient(circle at 90% -10%, #cffafe 0%, transparent 32%),
+    radial-gradient(circle at 0% 0%, #dbeafe 0%, transparent 44%),
+    radial-gradient(circle at 98% 8%, #bae6fd 0%, transparent 30%),
+    radial-gradient(circle at 50% 100%, #e2e8f0 0%, transparent 36%),
     var(--background);
   color: var(--foreground);
-  font-family: "Plus Jakarta Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: var(--font-manrope), "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.55;
 }
 
 a {
   color: inherit;
+}
+
+.section-surface {
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, white 92%, #eff6ff);
+  box-shadow: 0 20px 50px -38px rgba(15, 23, 42, 0.65);
+}
+
+.section-band {
+  border: 1px solid color-mix(in oklab, var(--border) 76%, #ffffff);
+  background: color-mix(in oklab, white 95%, #f0f9ff);
+  box-shadow: 0 18px 44px -36px rgba(15, 23, 42, 0.55);
+}
+
+.section-divider {
+  border-top: 1px solid color-mix(in oklab, var(--border) 74%, #ffffff);
+}
+
+.eyebrow {
+  display: inline-flex;
+  border: 1px solid #bae6fd;
+  background: #f0f9ff;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0c4a6e;
+  border-radius: 999px;
+}
+
+.heading-display {
+  font-family: var(--font-display), "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 ::selection {

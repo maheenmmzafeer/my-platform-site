@@ -8,53 +8,117 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="space-y-10">
-      <section className="rounded-2xl border border-sky-200 bg-sky-50/60 p-7 sm:p-10">
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">About Finxa Commerce</h1>
-        <p className="mt-4 max-w-3xl text-zinc-600">
-          Finxa Commerce exists to reduce operational friction for modern businesses.
-          We focus on clarity, speed and dependable execution across daily commerce workflows,
-          from intake and fulfillment coordination to support handoffs.
-        </p>
-        <p className="mt-3 max-w-3xl text-sm text-zinc-500">
-          Put simply: Finxa Commerce helps businesses run operations with fewer manual follow-ups
-          and clearer team accountability.
+    <div className="space-y-20">
+
+      {/* Split Hero */}
+      <section className="grid gap-10 lg:grid-cols-2 items-center">
+        <div>
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            About Finxa
+          </p>
+          <h1 className="mt-4 text-5xl font-semibold tracking-tight leading-tight text-slate-900">
+            Built to remove the chaos from daily operations
+          </h1>
+          <p className="mt-6 text-slate-700 max-w-lg">
+            Finxa Commerce exists to reduce operational friction for modern businesses.
+            We focus on clarity, speed and dependable execution across daily commerce workflows,
+            from intake and fulfillment coordination to support handoffs.
+          </p>
+          <p className="mt-4 text-sm text-slate-500 max-w-lg">
+            Put simply: Finxa Commerce helps businesses run operations with fewer manual follow-ups
+            and clearer team accountability.
+          </p>
+        </div>
+
+        {/* Visual Card */}
+        <div className="rounded-3xl bg-gradient-to-br from-sky-100 to-blue-50 p-8 border border-sky-200">
+          <p className="text-sm text-slate-600">What we focus on</p>
+          <p className="mt-3 text-xl font-medium text-slate-900 leading-relaxed">
+            Clear workflows, faster execution and reliable operations at scale.
+          </p>
+        </div>
+      </section>
+
+      {/* Big Statement Section */}
+      <section className="text-center max-w-4xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+          Operations should feel structured, not stressful
+        </h2>
+        <p className="mt-4 text-slate-700">
+          Finxa Commerce replaces scattered tools and unclear responsibilities
+          with a single system designed for predictable execution.
         </p>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-3">
-        <article className="rounded-xl border border-sky-200 bg-sky-50/70 p-6">
-          <p className="text-xs uppercase tracking-wide text-zinc-500">Mission</p>
-          <p className="mt-3 text-sm leading-6 text-zinc-700">
-            Help teams move from fragmented tools to a single, structured operating model.
-          </p>
-        </article>
-        <article className="rounded-xl border border-cyan-200 bg-cyan-50/70 p-6">
-          <p className="text-xs uppercase tracking-wide text-zinc-500">Approach</p>
-          <p className="mt-3 text-sm leading-6 text-zinc-700">
-            Keep interfaces minimal, workflows practical and decision-making data-informed.
-          </p>
-        </article>
-        <article className="rounded-xl border border-blue-200 bg-blue-50/70 p-6">
-          <p className="text-xs uppercase tracking-wide text-zinc-500">Promise</p>
-          <p className="mt-3 text-sm leading-6 text-zinc-700">
-            Deliver a platform that scales with your team without adding unnecessary complexity.
-          </p>
-        </article>
+      {/* Timeline Style (Mission / Approach / Promise) */}
+      <section className="space-y-10 max-w-3xl mx-auto">
+        
+        <div className="flex gap-6">
+          <div className="w-2 bg-sky-400 rounded-full"></div>
+          <div>
+            <p className="text-xs uppercase tracking-wide text-slate-500">Mission</p>
+            <p className="mt-2 text-slate-700">
+              Help teams move from fragmented tools to a single, structured operating model.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex gap-6">
+          <div className="w-2 bg-cyan-400 rounded-full"></div>
+          <div>
+            <p className="text-xs uppercase tracking-wide text-slate-500">Approach</p>
+            <p className="mt-2 text-slate-700">
+              Keep interfaces minimal, workflows practical and decision-making data-informed.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex gap-6">
+          <div className="w-2 bg-blue-400 rounded-full"></div>
+          <div>
+            <p className="text-xs uppercase tracking-wide text-slate-500">Promise</p>
+            <p className="mt-2 text-slate-700">
+              Deliver a platform that scales with your team without adding unnecessary complexity.
+            </p>
+          </div>
+        </div>
+
       </section>
 
-      <section className="rounded-2xl bg-gradient-to-r from-zinc-900 via-slate-900 to-zinc-800 text-white p-7 sm:p-10">
-        <h2 className="text-2xl font-semibold tracking-tight">Built for long-term growth</h2>
-        <p className="mt-3 text-zinc-300 max-w-2xl">
-          From early-stage teams to established operations, Finxa Commerce supports
-          disciplined execution with a clear and adaptable product foundation.
-        </p>
-        <ul className="mt-5 grid gap-3 text-sm text-zinc-200 sm:grid-cols-3">
-          <li className="rounded-lg border border-white/20 bg-white/5 p-3">Operational clarity across teams</li>
-          <li className="rounded-lg border border-white/20 bg-white/5 p-3">Consistent customer response quality</li>
-          <li className="rounded-lg border border-white/20 bg-white/5 p-3">Scalable workflows without extra overhead</li>
-        </ul>
+      {/* Alternating Feature Blocks */}
+      <section className="space-y-12">
+        
+        <div className="grid gap-8 lg:grid-cols-2 items-center">
+          <div className="rounded-2xl bg-slate-900 text-white p-8">
+            Operational clarity across teams
+          </div>
+          <p className="text-slate-700">
+            Finxa Commerce ensures every team member understands their role,
+            responsibilities and current priorities.
+          </p>
+        </div>
+
+        <div className="grid gap-8 lg:grid-cols-2 items-center">
+          <p className="text-slate-700">
+            Customers receive consistent and reliable communication,
+            regardless of who is handling the request.
+          </p>
+          <div className="rounded-2xl bg-sky-100 p-8">
+            Consistent customer response quality
+          </div>
+        </div>
+
+        <div className="grid gap-8 lg:grid-cols-2 items-center">
+          <div className="rounded-2xl bg-blue-100 p-8">
+            Scalable workflows without extra overhead
+          </div>
+          <p className="text-slate-700">
+            As your team grows, your processes remain efficient without adding unnecessary complexity.
+          </p>
+        </div>
+
       </section>
+
     </div>
   );
 }
