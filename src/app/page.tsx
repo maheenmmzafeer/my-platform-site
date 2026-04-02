@@ -50,6 +50,9 @@ export default function Home() {
         <h1 className="heading-display mt-5 text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
           Run modern commerce operations without the spreadsheet chaos.
         </h1>
+        <p className="mt-3 text-base font-medium text-slate-700 lg:hidden">
+          One place for onboarding, adoption and customer support visibility.
+        </p>
 
         <div className="mt-6 grid gap-8 lg:grid-cols-[1.5fr_1fr]">
           <div>
@@ -80,6 +83,10 @@ export default function Home() {
           </div>
 
           <div className="rounded-2xl border border-sky-100 bg-white/80 p-5">
+              <p className="text-sm leading-6 text-slate-700 lg:hidden">
+                Fast onboarding, strong team adoption and reliable support response for daily operations.
+              </p>
+              <div className="hidden lg:block">
               <div>
                 <dt className="text-slate-500">Average onboarding</dt>
                 <dd className="heading-display mt-1 text-xl font-semibold tracking-tight">7-10 days</dd>
@@ -91,6 +98,7 @@ export default function Home() {
               <div className="section-divider pt-4">
                 <dt className="text-slate-500">Support response</dt>
                 <dd className="heading-display mt-1 text-xl font-semibold tracking-tight">Within 1 business day</dd>
+              </div>
               </div>
            
           </div>

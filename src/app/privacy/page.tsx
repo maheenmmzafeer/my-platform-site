@@ -16,6 +16,9 @@ export default function Privacy() {
           Privacy Policy (Draft)
         </h1>
         <p className="text-sm text-zinc-500">Last updated: March 2026</p>
+        <p className="mx-auto max-w-2xl text-sm text-slate-600 lg:hidden">
+          Information We Collect, How Information Is Used, Information Sharing, Data Security, Data Retention, Contact.
+        </p>
       </section>
 
       {/* Layout */}

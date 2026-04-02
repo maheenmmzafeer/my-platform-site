@@ -15,6 +15,9 @@ export default function Terms() {
           Terms of Service (Draft)
         </h1>
         <p className="text-sm text-zinc-500">Last updated: 30th March 2026</p>
+        <p className="mx-auto max-w-2xl text-sm text-slate-600 lg:hidden">
+          Acceptance of Terms, Acceptable Use, Account Responsibility, Changes to Terms, Billing and Plan Changes, Service Availability.
+        </p>
       </section>
 
       {/* Layout */}

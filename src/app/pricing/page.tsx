@@ -52,8 +52,7 @@ export default function Pricing() {
     <div className="space-y-16">
 
       {/* Hero (About style) */}
-      <section className="section-band fade-up relative overflow-hidden rounded-3xl p-7 sm:p-10 bg-gradient-to-br from-sky-50 to-white">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-52 w-52 rounded-full bg-sky-200/40 blur-2xl" />
+      <section className="section-band fade-up overflow-hidden rounded-3xl p-7 sm:p-10">
 
         <p className="text-sm uppercase tracking-wider text-slate-500">
           Pricing

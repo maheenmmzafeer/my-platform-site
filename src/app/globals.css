@@ -21,6 +21,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  font-size: 85%;
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 body {
   background:
     radial-gradient(circle at 0% 0%, #dbeafe 0%, transparent 44%),

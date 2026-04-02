@@ -54,11 +54,29 @@ export default function FAQ() {
       
       {/* Split Hero */}
       <section className="grid gap-10 lg:grid-cols-2 items-center">
-        <div>
+        <div className="section-band fade-up overflow-hidden rounded-3xl p-7 sm:p-10 lg:hidden">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             FAQ
           </p>
-          <h1 className="mt-4 text-5xl font-semibold tracking-tight leading-tight text-slate-900">
+          <h1 className="heading-display mt-5 text-4xl font-semibold leading-tight tracking-tight text-slate-900">
+            Frequently Asked Questions
+          </h1>
+          <p className="mt-6 max-w-2xl text-base text-slate-600 sm:text-lg">
+            Plain-language answers to help you quickly understand what Finxa Commerce offers.
+          </p>
+          <div className="section-divider mt-6 pt-4">
+            <p className="text-sm text-slate-600">Support & Guidance</p>
+            <p className="mt-3 text-xl font-medium text-slate-900 leading-relaxed">
+              We’re here to help you get the most from Finxa Commerce.
+            </p>
+          </div>
+        </div>
+
+        <div className="hidden lg:block">
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            FAQ
+          </p>
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight leading-tight text-slate-900 sm:text-5xl">
             Frequently Asked Questions
           </h1>
           <p className="mt-6 text-slate-700 max-w-lg">
@@ -66,7 +84,7 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div className="rounded-3xl bg-gradient-to-br from-sky-100 to-blue-50 p-8 border border-sky-200">
+        <div className="hidden rounded-3xl bg-gradient-to-br from-sky-100 to-blue-50 p-8 border border-sky-200 lg:block">
           <p className="text-sm text-slate-600">Support & Guidance</p>
           <p className="mt-3 text-xl font-medium text-slate-900 leading-relaxed">
             We’re here to help you get the most from Finxa Commerce.

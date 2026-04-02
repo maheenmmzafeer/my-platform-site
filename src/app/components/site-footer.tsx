@@ -16,7 +16,7 @@ export function SiteFooter() {
 						Finxa Commerce
 					</p>
 					<p className="mt-3 max-w-sm text-sm leading-6 text-slate-400">
-						Built for teams that want elegant operations, predictable execution, and faster growth.
+						Built for teams that want elegant operations, predictable execution and faster growth.
 					</p>
 					<p className="mt-4 text-xs text-slate-500">© 2026 Finxa Commerce. All rights reserved.</p>
 				</div>
