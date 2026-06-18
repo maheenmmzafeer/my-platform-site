@@ -1,8 +1,8 @@
-# Finxa Commerce Marketing Site 🚀
+# Finxa Commerce Marketing Site
 
 Finxa Commerce is a multi-page marketing website for an operations-focused commerce platform. The site presents the product, its pricing, common questions, company background and legal pages in a clean brochure-style layout built with modern React and Next.js.
 
-## 🌐 Overview
+## Overview
 
 Finxa Commerce is a modern, content-driven marketing website designed to communicate the value of an operations-focused commerce platform. It presents key product messaging, pricing and supporting information through a structured set of pages that guide users from discovery to action.
 
@@ -12,9 +12,9 @@ Built using the Next.js App Router and a component-based architecture, the proje
 
 ## 🔗 Live Demo
 
-👉 [View Live Site](https://my-platform-site.vercel.app/)
+[View Live Site](https://my-platform-site.vercel.app/)
 
-## ✨ Scope
+## Scope
 
 The site currently includes:
 
@@ -35,7 +35,7 @@ The site currently includes:
 - ESLint 9
 - Google Fonts via Next.js font optimization
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 src/
@@ -56,7 +56,7 @@ src/
 public/                 Static assets
 ```
 
-## 🧭 Routes
+## Routes
 
 | Route | Purpose |
 | --- | --- |
@@ -69,28 +69,18 @@ public/                 Static assets
 | /terms | Draft terms of service |
 | any unmatched route | Custom 404 page |
 
-## 🔎 Metadata And SEO
+## Metadata And SEO
 
 Each major route exports Next.js metadata for page titles and descriptions. The root layout also defines Open Graph metadata for the site identity and primary landing page.
 
 This setup gives the site meaningful browser titles and social preview data without adding a separate SEO layer.
 
-## 🔌 External Integrations
+## External Integrations
 
 The contact page supports form submission through an externally configured endpoint. If NEXT_PUBLIC_FORMSPREE_URL is not set, the form falls back to a placeholder action and shows a configuration hint in the UI.
 
 There are no other runtime integrations in the current codebase.
 
-## 🌍 Environment Variables
-
-The only environment variable referenced in the app code is:
+## Environment Variables
 
 - NEXT_PUBLIC_FORMSPREE_URL: form submission endpoint used by the contact page
-
-## 🚢 Deployment Profile
-
-The repository is structured like a standard Next.js site intended for static content hosting or a managed deployment platform. The codebase is compatible with typical modern Next.js deployment workflows, but the repository itself does not include deployment infrastructure files beyond the app code and configuration.
-
-## 👩‍💻 Maintainer Summary
-
-This repository is best described as a polished SaaS marketing site with a strong content hierarchy, route-based composition and minimal dependencies beyond the Next.js stack.
